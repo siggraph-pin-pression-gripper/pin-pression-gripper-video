@@ -8,5 +8,5 @@ Project of Pin-pression Grippers for Dexterous Grasping with Dynamic In-hand Adj
 ![](assets/Real-world/real-world.gif)
 
 
-#### Tips：If you find that the gifs don't work, please try to refresh the page and wait for a while.
+#### Tips: If you find the gifs don't work, please try to refresh the page and wait for a while.
 Code/data will be released soon.
