@@ -5,6 +5,6 @@ Project of Pin-pression Grippers for Dexterous Grasping with Dynamic In-hand Adj
 ## Demonstration of Grasp-while-Lift (GwL) motion
 ![](assets/Gwl-motion/Gwl-motion.gif)
 ## Demonstration of real-world experiments
-![](assets/Real_world/real-world.gif)
+![](assets/Real-world/real-world.gif)
 
 Code/data will be released soon.
