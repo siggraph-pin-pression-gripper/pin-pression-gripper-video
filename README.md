@@ -2,7 +2,7 @@
 Project of Pin-pression Grippers for Dexterous Grasping with Dynamic In-hand Adjustment
 
 ## Demonstration of real-world experiments
-We develope a physical prototype of the pin-pression gripper during the rebuttal period. 
+We develope a physical prototype of the pin-pression gripper. 
 
 ![](assets/Real-world/Sim2real.png)
 ![](assets/Real-world/real-world-1.gif)
