@@ -1,6 +1,5 @@
-# pin-pression-gripper-video
-### Project of Designing Pin-pression Gripper and Learning its Dexterous Grasping with Online In-hand Adjustment
-
+# Project of Designing Pin-pression Gripper and Learning its Dexterous Grasping with Online In-hand Adjustment
+## Introduction
 In this project, we introduce a novel pin-pression gripper that features adjusting its finger shape to conform to the target object.
 We carefully devise a reinforcement learning algorithm to handle the online grasping skills.
 
@@ -10,19 +9,16 @@ We develop a physical prototype of the pin-pression gripper.
 ![](assets/Real-world/Sim2real.png)
 ![](assets/Real-world/real-world-1.gif)
 
-
 ### Physical configuration: 
 We use pneumatic cylinders as the pin actuators and an RGB-D image as the observation signal. The pneumatic pressure is controlled via solenoid valves and relays, enabling the extension and retraction of the pins. The gripper, with 3×3 pins and one RGB-D camera, weighs 2.3 kg and is mounted on a FANUC robot for vertical movement. 
 
 ### Visual perception processing: 
 We retrained the network using PyBullet with the RGB-D image as observation. RGB and depth images are processed separately by two pre-trained Inception-v3 networks, and their features are concatenated into a 4096-dimensional vector as the state representation. Both the actor and critic network are implemented as Multi-Layer Perceptron structures. The entire network is trained end-to-end, allowing the pre-trained networks to be fine-tuned to fit our task better. 
 
-### Future work: 
-We aim for our gripper to achieve good performance on as many shapes as possible while minimizing the number of pin actuators used. In our real-world experiments, we confirmed that a 3×3 resolution can achieve satisfactory grasping of multiple given objects, such as the Stanford bunny. In the future, we will implement a practical 4*4 version and consider applying imitation learning and domain randomization to achieve the sim-to-real transfer like the gap between the designed state representation and RGB-D image.
-
-### Dataset
+## Data Preparation
 The challenge datasets consists of a Chal-H dataset with 50 flat shapes and a Chal-T dataset consisting of objects with inclined surfaces or tetrahedron-like shapes.
 You can download the prepared dataset from here.
+
 
 ## RL policy VS Extending all pins
 |**Group**  | **RL policy** | **Extending all pins** |
