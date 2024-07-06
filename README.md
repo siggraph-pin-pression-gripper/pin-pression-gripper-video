@@ -3,6 +3,7 @@
 In this project, we introduce a novel pin-pression gripper that features adjusting its finger shape to conform to the target object.
 We carefully devise a reinforcement learning algorithm to handle the online grasping skills.
 
+
 ## Real-world demos
 We develop a physical prototype of the pin-pression gripper. 
 
@@ -14,6 +15,7 @@ We utilize pneumatic cylinders as the actuators of our pin-pression gripper. Eac
 
 ### Observation signal and control policy: 
 To enable real-world deployment, we distill the control policy learned in the simulator into a student policy that only receives RGB-D images, the extension values of each pin actuator, and the position of the gripper as observation signals. These signals are embedded and concatenated as the state feature and then fed to the student policy for grasping actions. In our real-world experiments, we confirmed that our gripper can achieve satisfactory grasping of multiple complex objects, such as Stanford Bunny, even only with a 3×3 pin resolution.
+
 
 ## Data Preparation
 The challenge datasets: Chal-H dataset with 50 flat shapes and a Chal-T dataset consisting of 58 objects with inclined surfaces or tetrahedron-like shapes.
