@@ -1,5 +1,5 @@
 # pin-pression-gripper-video
-Project of Designing Pin-pression Gripper and Learning its Dexterous Grasping with Online In-hand Adjustment
+### Project of Designing Pin-pression Gripper and Learning its Dexterous Grasping with Online In-hand Adjustment
 
 In this project, We introduce a novel pin-pression gripper that features adjusting its finger shape to conform to the target object.
 We carefully devise a reinforcement learning algorithm to handle the online grasping skills.
