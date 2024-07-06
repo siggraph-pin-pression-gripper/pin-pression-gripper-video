@@ -20,8 +20,8 @@ We retrained the network using PyBullet with the RGB-D image as observation. RGB
 ### Future work: 
 We aim for our gripper to achieve good performance on as many shapes as possible while minimizing the number of pin actuators used. In our real-world experiments, we confirmed that a 3×3 resolution can achieve satisfactory grasping of multiple given objects, such as the Stanford bunny. In the future, we will implement a practical 4*4 version and consider applying imitation learning and domain randomization to achieve the sim-to-real transfer like the gap between the designed state representation and RGB-D image.
 
-
-
+### Data
+Challenge dataset obtain a Chal-H dataset with 50 flat shapes and a Chal-T dataset consisting of objects with inclined surfaces or tetrahedron-like shapes.
 
 ## RL policy VS Extending all pins
 |**Group**  | **RL policy** | **Extending all pins** |
