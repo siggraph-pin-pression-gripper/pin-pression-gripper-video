@@ -1,6 +1,10 @@
 # pin-pression-gripper-video
 Project of Pin-pression Grippers for Dexterous Grasping with Dynamic In-hand Adjustment
 
+## Demonstration of real-world experiments
+![](assets/Real-world/real-world-1.gif)
+
+
 ## RL policy VS Extending all pins
 |**Group**  | **RL policy** | **Extending all pins** |
 |-----------|--------------|--------------|
@@ -27,8 +31,7 @@ Our pin-pression gripper offers object adaption and in-hand re-orientation throu
   <img src="GwL-mode-3.gif" alt="Image 2" width="48%">
 </div>
 
-## Demonstration of real-world experiments
-![](assets/Real-world/real-world-1.gif)
+
 
 
 #### Tips: If you find the gifs don't work, please try to refresh the page and wait for a while.
