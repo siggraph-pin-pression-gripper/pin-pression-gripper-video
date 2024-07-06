@@ -34,7 +34,7 @@ You can download the prepared dataset from here.
 <!-- Table -->
 Our pin-pression gripper offers object adaption and in-hand re-orientation through dynamically adjusting the extension and retraction of pins.
 
-## Demonstration of Grasp-then-Lift (GtL) motion
+<!-- ## Demonstration of Grasp-then-Lift (GtL) motion
 <div style="display: flex; justify-content: space-between;">
   <img src="GtL-mode-1.gif" alt="Image 1" width="48%">
   <img src="GtL-mode-2.gif" alt="Image 2" width="48%">
@@ -44,10 +44,7 @@ Our pin-pression gripper offers object adaption and in-hand re-orientation throu
 <div style="display: flex; justify-content: space-between;">
   <img src="GwL-mode-1.gif" alt="Image 1" width="48%">
   <img src="GwL-mode-3.gif" alt="Image 2" width="48%">
-</div>
-
-
-
+</div> -->
 
 #### Tips: If you find the gifs don't work, please try to refresh the page and wait for a while.
 Code/data will be released soon.
