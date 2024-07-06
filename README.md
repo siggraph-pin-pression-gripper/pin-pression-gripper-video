@@ -1,6 +1,9 @@
 # pin-pression-gripper-video
 Project of Designing Pin-pression Gripper and Learning its Dexterous Grasping with Online In-hand Adjustment
 
+In this project, We introduce a novel pin-pression gripper that features adjusting its finger shape to conform to the target object.
+We carefully devise a reinforcement learning algorithm to handle the online grasping skills.
+
 ## Real-world demos
 We develop a physical prototype of the pin-pression gripper. 
 
@@ -16,6 +19,8 @@ We retrained the network using PyBullet with the RGB-D image as observation. RGB
 
 ### Future work: 
 We aim for our gripper to achieve good performance on as many shapes as possible while minimizing the number of pin actuators used. In our real-world experiments, we confirmed that a 3×3 resolution can achieve satisfactory grasping of multiple given objects, such as the Stanford bunny. In the future, we will implement a practical 4*4 version and consider applying imitation learning and domain randomization to achieve the sim-to-real transfer like the gap between the designed state representation and RGB-D image.
+
+
 
 
 ## RL policy VS Extending all pins
