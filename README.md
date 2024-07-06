@@ -16,7 +16,7 @@ We use pneumatic cylinders as the pin actuators and an RGB-D image as the observ
 We retrained the network using PyBullet with the RGB-D image as observation. RGB and depth images are processed separately by two pre-trained Inception-v3 networks, and their features are concatenated into a 4096-dimensional vector as the state representation. Both the actor and critic network are implemented as Multi-Layer Perceptron structures. The entire network is trained end-to-end, allowing the pre-trained networks to be fine-tuned to fit our task better. 
 
 ## Data Preparation
-The challenge datasets consists of a Chal-H dataset with 50 flat shapes and a Chal-T dataset consisting of 58 objects with inclined surfaces or tetrahedron-like shapes.
+The challenge datasets: Chal-H dataset with 50 flat shapes and a Chal-T dataset consisting of 58 objects with inclined surfaces or tetrahedron-like shapes.
 You can download the prepared dataset from here.
 
 
