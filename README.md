@@ -9,11 +9,11 @@ We develop a physical prototype of the pin-pression gripper.
 ![](assets/Real-world/Sim2real.png)
 ![](assets/Real-world/real-world-1.gif)
 
-### Physical configuration: 
-We use pneumatic cylinders as the pin actuators and an RGB-D image as the observation signal. The pneumatic pressure is controlled via solenoid valves and relays, enabling the extension and retraction of the pins. The gripper, with 3×3 pins and one RGB-D camera, weighs 2.3 kg and is mounted on a FANUC robot for vertical movement. 
+### Hardware configuration: 
+We utilize pneumatic cylinders as the actuators of our pin-pression gripper. Each cylinder is controlled via solenoid valves and relays, allowing for precise extension and retraction. To explore the minimum number of pin actuators in practice, the physical gripper is designed with a 3x3 resolution, weighing 2.3kg. Both gripper size and pin sizes align with the simulated gripper. Our gripper is mounted on a FANUC Robot for vertical movement.
 
-### Visual perception processing: 
-We retrained the network using PyBullet with the RGB-D image as observation. RGB and depth images are processed separately by two pre-trained Inception-v3 networks, and their features are concatenated into a 4096-dimensional vector as the state representation. Both the actor and critic network are implemented as Multi-Layer Perceptron structures. The entire network is trained end-to-end, allowing the pre-trained networks to be fine-tuned to fit our task better. 
+### Observation signal and control policy: 
+To enable real-world deployment, we distill the control policy learned in the simulator into a student policy that only receives RGB-D images, the extension values of each pin actuator, and the position of the gripper as observation signals. These signals are embedded and concatenated as the state feature and then fed to the student policy for grasping actions. In our real-world experiments, we confirmed that our gripper can achieve satisfactory grasping of multiple complex objects, such as Stanford Bunny, even only with a 3×3 pin resolution.
 
 ## Data Preparation
 The challenge datasets: Chal-H dataset with 50 flat shapes and a Chal-T dataset consisting of 58 objects with inclined surfaces or tetrahedron-like shapes.
