@@ -17,7 +17,7 @@ We retrained the network using PyBullet with the RGB-D image as observation. RGB
 
 ## Data Preparation
 The challenge datasets: Chal-H dataset with 50 flat shapes and a Chal-T dataset consisting of 58 objects with inclined surfaces or tetrahedron-like shapes.
-You can download the prepared dataset from here.
+You can download the prepared dataset from [here](https://drive.google.com/drive/folders/1nx7LngqmtAvSGkX44yYfAoMbGQITP_i1?usp=drive_link).
 
 
 ## RL policy VS Extending all pins
