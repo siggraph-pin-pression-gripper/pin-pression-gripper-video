@@ -1,5 +1,5 @@
 # pin-pression-gripper-video
-Project of Pin-pression Grippers for Dexterous Grasping with Dynamic In-hand Adjustment
+Project of Designing Pin-pression Gripper and Learning its Dexterous Grasping with Online In-hand Adjustment
 
 ## Demonstration of real-world experiments
 We develope a physical prototype of the pin-pression gripper. 
