@@ -13,7 +13,7 @@ We have developed a preliminary implementation of our pin-pression gripper.
 ![](assets/Real-world/Sim2real.png)
 We fabricate a real pin-pression gripper (a) equipped with an in-hand RGB-D camera for capturing observations. The gripper approaches the target object from the top (b), forms a basic closure against the object with pin movements (c), and achieves the final grasp (d).
 
-#### Demo video (Loading the GIF may take a while and thanks for your patience)
+### Demo video (Loading the GIF here may take a few minutes and thanks for your patience)
 <div style="display: flex; justify-content: space-between;">
   <img src="assets/Real-world/gif_result/real-demo-1.gif" alt="Image 1" width="32.5%">
   <img src="assets/Real-world/gif_result/real-demo-2.gif" alt="Image 2" width="32.5%">
