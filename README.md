@@ -5,23 +5,24 @@ We carefully devise a reinforcement learning algorithm to handle the online gras
 
 
 ## Real-world demos
-We develop a physical prototype of the pin-pression gripper. 
+We have developed a preliminary implementation of our pin-pression gripper.
 
 ![](assets/Real-world/Sim2real.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a) Robotic platform&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b) Initial state&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c) Before lifting&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(d) Final grasp
 
+We fabricate a real pin-pression gripper (a) equipped with an in-hand RGB-D camera for capturing observations. The gripper approaches the target object from the top (b), forms a basic closure against the object with pin movements (c), and achieves the final grasp (d).
+
+### Demo Video
 <div style="display: flex; justify-content: space-between;">
   <img src="assets/Real-world/gif_result/real-demo-1.gif" alt="Image 1" width="33%">
   <img src="assets/Real-world/gif_result/real-demo-2.gif" alt="Image 2" width="33%">
   <img src="assets/Real-world/gif_result/real-demo-3.gif" alt="Image 3" width="33%">
 </div>
 
-### Hardware configuration: 
-We utilize pneumatic cylinders as the actuators of our pin-pression gripper. Each cylinder is controlled via solenoid valves and relays, allowing for precise extension and retraction. To explore the minimum number of pin actuators in practice, the physical gripper is designed with a 3x3 resolution, weighing 2.3kg. Both gripper size and pin sizes align with the simulated gripper. Our gripper is mounted on a FANUC Robot for vertical movement.
-
-### Observation signal and control policy: 
+### Hardware configuration
+We utilize pneumatic cylinders as the actuators of our pin-pression gripper. Each cylinder is controlled via solenoid valves and relays, allowing for precise extension and retraction. To explore the minimum number of pin actuators in practice, the physical gripper is designed with a 3x3 resolution, weighing 2.3kg. Both gripper size and pin sizes align with the simulated gripper. Our gripper is mounted on a FANUC Robot for vertical movement.  
+### Observation signal and control policy
 To enable real-world deployment, we distill the control policy learned in the simulator into a student policy that only receives RGB-D images, the extension values of each pin actuator, and the position of the gripper as observation signals. These signals are embedded and concatenated as the state feature and then fed to the student policy for grasping actions. In our real-world experiments, we confirmed that our gripper can achieve satisfactory grasping of multiple complex objects, such as Stanford Bunny, even only with a 3×3 pin resolution.
-
-
 
 
 ## Data Preparation
@@ -30,7 +31,7 @@ You can download the prepared dataset from [here](https://drive.google.com/drive
 
 
 ## RL policy VS Passive grapsing
-|**Object**  | **RL policy** | **Extending all pins** |
+|**Object**  | **RL policy** | **Passive grasping** |
 |-----------|--------------|--------------|
 | **#O1** | ![Image 1.1](assets/compare_with_all-extended/group-1/rl-1.gif) | ![Image 1.2](assets/compare_with_all-extended/group-1/all-1.gif) |
 | **#O2** | ![Image 2.1](assets/compare_with_all-extended/group-2/rl-2.gif) | ![Image 2.2](assets/compare_with_all-extended/group-2/all-2.gif) |
@@ -38,8 +39,8 @@ You can download the prepared dataset from [here](https://drive.google.com/drive
 | **#O4** | ![Image 4.1](assets/compare_with_all-extended/group-4/rl-4.gif) | ![Image 4.2](assets/compare_with_all-extended/group-4/all-4.gif) |
 | **#O5** | ![Image 5.1](assets/compare_with_all-extended/group-5/rl-5.gif) | ![Image 5.2](assets/compare_with_all-extended/group-5/all-5.gif) |
 | **#O6** | ![Image 6.1](assets/compare_with_all-extended/group-6/rl-6.gif) | ![Image 6.2](assets/compare_with_all-extended/group-6/all-6.gif) |
-| **#O7** | ![Image 7.1](assets/compare_with_all-extended/group-7/rl-7.gif) | ![Image 7.2](assets/compare_with_all-extended/group-7/all-7.gif) |
-| **#O8** | ![Image 8.1](assets/compare_with_all-extended/group-8/rl-policy-8.gif) | ![Image 8.2](assets/compare_with_all-extended/group-8/all-8.gif) |
+<!-- | **#O7** | ![Image 7.1](assets/compare_with_all-extended/group-7/rl-7.gif) | ![Image 7.2](assets/compare_with_all-extended/group-7/all-7.gif) | -->
+<!-- | **#O8** | ![Image 8.1](assets/compare_with_all-extended/group-8/rl-policy-8.gif) | ![Image 8.2](assets/compare_with_all-extended/group-8/all-8.gif) | -->
 <!-- Table -->
 Our pin-pression gripper offers object adaption and in-hand re-orientation through dynamically adjusting the extension and retraction of pins.
 
