@@ -7,7 +7,7 @@ We carefully devise a reinforcement learning algorithm to handle the online gras
 ## Real-world demos
 We have developed a preliminary implementation of our pin-pression gripper.
 
-![](assets/Real-world/Sim2real_0.png)
+![](assets/Real-world/Sim2real.png)
 We fabricate a real pin-pression gripper (a) equipped with an in-hand RGB-D camera for capturing observations. The gripper approaches the target object from the top (b), forms a basic closure against the object with pin movements (c), and achieves the final grasp (d).
 
 ### Demo Video
