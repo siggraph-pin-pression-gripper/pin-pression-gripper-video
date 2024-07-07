@@ -1,4 +1,7 @@
 # Project of Designing Pin-pression Gripper and Learning its Dexterous Grasping with Online In-hand Adjustment
+
+#### Tips: If you find the gifs don't work, please try to refresh the page and wait for a while.
+
 ## Introduction
 In this project, we introduce a novel pin-pression gripper that features adjusting its finger shape to conform to the target object.
 We carefully devise a reinforcement learning algorithm to handle the online grasping skills.
@@ -10,7 +13,7 @@ We have developed a preliminary implementation of our pin-pression gripper.
 ![](assets/Real-world/Sim2real.png)
 We fabricate a real pin-pression gripper (a) equipped with an in-hand RGB-D camera for capturing observations. The gripper approaches the target object from the top (b), forms a basic closure against the object with pin movements (c), and achieves the final grasp (d).
 
-#### Demo video
+#### Demo video (Loading the GIF may take a while.)
 <div style="display: flex; justify-content: space-between;">
   <img src="assets/Real-world/gif_result/real-demo-1.gif" alt="Image 1" width="32.5%">
   <img src="assets/Real-world/gif_result/real-demo-2.gif" alt="Image 2" width="32.5%">
@@ -28,7 +31,7 @@ To enable real-world deployment, we distill the control policy learned in the si
 We collect several challenging objects to further demonstrate the necessity of our on-line grasping approach. 
 The challenge datasets: Chal-H dataset with 50 flat shapes and Chal-T dataset consisting of 58 objects with inclined surfaces or tetrahedron-like shapes. You can download the prepared dataset from [here](https://drive.google.com/drive/folders/1nx7LngqmtAvSGkX44yYfAoMbGQITP_i1?usp=drive_link).
 
-## Animation result
+## Animation result (Loading the GIF may take a while.)
 Using our pin-pression gripper, we found that passive grasping method which heuristically extends all pins struggles, particularly with objects with inclined surfaces. It is necessary to adopt reinforcement learning (RL) policies for the pin-pression gripper to enable adaptive in-hand object adjustments, thereby achieving better force closure and efficient grasping. 
 #### RL policy vs. Passive grasping
 |**Object**  | **RL policy** | **Passive grasping** |
@@ -55,5 +58,4 @@ Using our pin-pression gripper, we found that passive grasping method which heur
   <img src="GwL-mode-3.gif" alt="Image 2" width="48%">
 </div> -->
 
-#### Tips: If you find the gifs don't work, please try to refresh the page and wait for a while.
-Code/data will be released soon.
+#### Code/data will be released soon.
