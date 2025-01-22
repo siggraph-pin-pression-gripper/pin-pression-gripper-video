@@ -15,9 +15,10 @@ We fabricate a real pin-pression gripper (a) equipped with an in-hand RGB-D came
 
 ### Demo video (Loading the GIF here may take a few minutes and thanks for your patience)
 <div style="display: flex; justify-content: space-between;">
-  <img src="assets/Real-world/gif_result/real-demo-1.gif" alt="Image 1" width="32.5%">
-  <img src="assets/Real-world/gif_result/real-demo-2.gif" alt="Image 2" width="32.5%">
-  <img src="assets/Real-world/gif_result/real-demo-3.gif" alt="Image 3" width="32.5%">
+  <img src="assets/Real-world/gif_result/object2/02-ours.gif" alt="Image 1" width="32.5%">
+  <img src="assets/Real-world/gif_result/object3/03-ours.gif" alt="Image 2" width="32.5%">
+  <img src="assets/Real-world/gif_result/object4/04-ours.gif" alt="Image 3" width="32.5%">
+  <img src="assets/Real-world/gif_result/object5/05-ours.gif" alt="Image 4" width="32.5%">
 </div>
 The corresponding MP4 format demos have also been uploaded in the path: 'assets/Real-world/mp4_result'.
 
