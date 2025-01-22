@@ -20,7 +20,7 @@ We fabricate a real pin-pression gripper (a) equipped with an in-hand RGB-D came
 | <img src="assets/Real-world/gif_result/object3/03-ours.gif" alt="Image 3.1">| <img src="assets/Real-world/gif_result/object3/03-passive.gif" alt="Image 3.2">|
 | *ours* |*passive* |
 <div style="display: flex; justify-content: space-between;">
- | <img src="assets/Real-world/gif_result/object4/04-ours.gif" alt="Image 4" width="32.5%">| <img src="assets/Real-world/gif_result/object5/05-ours.gif" alt="Image 5" width="32.5%">|
+ | <img src="assets/Real-world/gif_result/object4/04-ours.gif" alt="Image 4" > <img src="assets/Real-world/gif_result/object5/05-ours.gif" alt="Image 5">|
  |:--:|
  |*ours*| 
 </div>
