@@ -14,19 +14,12 @@ We have developed a preliminary implementation of our pin-pression gripper.
 We fabricate a real pin-pression gripper (a) equipped with an in-hand RGB-D camera for capturing observations. The gripper approaches the target object from the top (b), forms a basic closure against the object with pin movements (c), and achieves the final grasp (d).
 
 ### Demo video (Loading the GIF here may take a few minutes and thanks for your patience)
+| ![Image 1.1](assets/Real-world/gif_result/object1/01-ours.gif) | ![Image 1.2](assets/Real-world/gif_result/object1/01-passive.gif)|
+|:--:||:--:| 
+| *ours* |*passive* |
 <div style="display: flex; justify-content: space-between;">
-<p>
-  <figure>
-  <img src="assets/Real-world/gif_result/object1/01-ours.gif" alt="Image 1" width="32.5%">
-  <figcaption>Ours</figcaption>
-</figure>
-</p>
-<p>
-<figure>
-  <img src="assets/Real-world/gif_result/object1/01-passive.gif" alt="Image 2" width="32.5%">
-  <figcaption>Passive</figcaption>
-</figure>
-</p>
+  <img src="assets/Real-world/gif_result/object1/01-ours.gif" alt="Image 1" width="50%">
+  <img src="assets/Real-world/gif_result/object1/01-passive.gif" alt="Image 2" width="50%">
   <img src="assets/Real-world/gif_result/object2/02-ours.gif" alt="Image 2" width="32.5%">
   <img src="assets/Real-world/gif_result/object3/03-ours.gif" alt="Image 3" width="32.5%">
   <img src="assets/Real-world/gif_result/object4/04-ours.gif" alt="Image 4" width="32.5%">
