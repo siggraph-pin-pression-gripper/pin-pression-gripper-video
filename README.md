@@ -8,10 +8,10 @@ We carefully devise a reinforcement learning algorithm to handle the online gras
 
 
 ## Real-world demo
-We have developed a real-world implementation of our pin-pression gripper with electrically controlled pins,.
+We have developed a real-world implementation of our pin-pression gripper with electrically controlled pins.
 
 ![](assets/Real-world/sim2real.png)
-We fabricate a real pin-pression gripper with electrically controlled pins(a), equipped with an in-hand RGB-D camera for capturing observations. The gripper approaches the target object from the top, forms a basic closure against the object with pin movements, and achieves the final grasp (b).
+We fabricate a real pin-pression gripper with electrically controlled pins (a), equipped with an in-hand RGB-D camera for capturing observations. The gripper approaches the target object from the top, forms a basic closure against the object with pin movements, and achieves the final grasp (b).
 
 ### Physical experiment video (Loading the GIF here may take a few minutes and thanks for your patience)
 | **Ours** | **Passive Grasping** |
@@ -22,7 +22,7 @@ We fabricate a real pin-pression gripper with electrically controlled pins(a), e
 | **Ours** | 
 | <img src="assets/Real-world/gif_result/object4/04-ours.gif" alt="Image 4" width="99%"> | <img src="assets/Real-world/gif_result/object5/05-ours.gif" alt="Image 5" width="99%"> | |
 </div>
-The corresponding MP4 format demos have also been uploaded in the path: 'assets/Real-world/mp4_result'.
+The corresponding MP4 format demos have also been uploaded in the path: 'assets/Real-world/video_result'.
 
 #### Hardware configuration
 We utilize  electrical actuators as pins of our pin-pression gripper. Each pin is connected to a separate relay for independent control, allowing for precise extension and retraction. The physical gripper is designed with a 4x4 resolution, weighing 2.3kg. Both gripper size and pin sizes align with the simulated gripper. Our gripper is mounted on a FANUC Robot for vertical movement.  
