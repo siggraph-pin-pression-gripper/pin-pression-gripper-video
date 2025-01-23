@@ -14,14 +14,32 @@ We have developed a real-world implementation of our pin-pression gripper with e
 We fabricate a real pin-pression gripper with electrically controlled pins (a), equipped with an in-hand RGB-D camera for capturing observations. The gripper approaches the target object from the top, forms a basic closure against the object with pin movements, and achieves the final grasp (b).
 
 ### Physical experiment video (Loading the GIF here may take a few minutes and thanks for your patience)
-| **Ours** | **Passive Grasping** |
-|----------|----------------------|
-| <img src="assets/Real-world/gif_result/object1/01-ours.gif" alt="Image 1.1" width="99%"> | <img src="assets/Real-world/gif_result/object1/01-passive.gif" alt="Image 1.2" width="99%"> |
-| <img src="assets/Real-world/gif_result/object2/02-ours.gif" alt="Image 2.1" width="99%"> | <img src="assets/Real-world/gif_result/object2/02-passive.gif" alt="Image 2.2" width="99%"> |
-| <img src="assets/Real-world/gif_result/object3/03-ours.gif" alt="Image 3.1" width="99%"> | <img src="assets/Real-world/gif_result/object3/03-passive.gif" alt="Image 3.2" width="99%"> |
-| **Ours** | 
-| <img src="assets/Real-world/gif_result/object4/04-ours.gif" alt="Image 4" width="99%"> | <img src="assets/Real-world/gif_result/object5/05-ours.gif" alt="Image 5" width="99%"> | |
-</div>
+<table>
+  <tr>
+    <th style="text-align: center;">**Ours**</th>
+    <th style="text-align: center;">**Passive Grasping**</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><img src="assets/Real-world/gif_result/object1/01-ours.gif" alt="Image 1.1" width="99%"></td>
+    <td style="text-align: center;"><img src="assets/Real-world/gif_result/object1/01-passive.gif" alt="Image 1.2" width="99%"></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><img src="assets/Real-world/gif_result/object2/02-ours.gif" alt="Image 2.1" width="99%"></td>
+    <td style="text-align: center;"><img src="assets/Real-world/gif_result/object2/02-passive.gif" alt="Image 2.2" width="99%"></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><img src="assets/Real-world/gif_result/object3/03-ours.gif" alt="Image 3.1" width="99%"></td>
+    <td style="text-align: center;"><img src="assets/Real-world/gif_result/object3/03-passive.gif" alt="Image 3.2" width="99%"></td>
+  </tr>
+  <tr>
+    <th colspan="2" style="text-align: center;">**Ours**</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><img src="assets/Real-world/gif_result/object4/04-ours.gif" alt="Image 4" width="99%"></td>
+    <td style="text-align: center;"><img src="assets/Real-world/gif_result/object5/05-ours.gif" alt="Image 5" width="99%"></td>
+  </tr>
+</table>
+
 The corresponding MP4 format demos have also been uploaded in the path: 'assets/Real-world/video_result'.
 
 #### Hardware configuration
