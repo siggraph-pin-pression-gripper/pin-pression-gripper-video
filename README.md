@@ -16,8 +16,8 @@ We fabricate a real pin-pression gripper with electrically controlled pins (a), 
 ### Physical experiment video (Loading the GIF here may take a few minutes and thanks for your patience)
 <table>
   <tr>
-    <th style="text-align: center;">**Ours**</th>
-    <th style="text-align: center;">**Passive Grasping**</th>
+    <th style="text-align: center;">Ours</th>
+    <th style="text-align: center;">Passive Grasping</th>
   </tr>
   <tr>
     <td style="text-align: center;"><img src="assets/Real-world/gif_result/object1/01-ours.gif" alt="Image 1.1" width="99%"></td>
@@ -32,7 +32,7 @@ We fabricate a real pin-pression gripper with electrically controlled pins (a), 
     <td style="text-align: center;"><img src="assets/Real-world/gif_result/object3/03-passive.gif" alt="Image 3.2" width="99%"></td>
   </tr>
   <tr>
-    <th colspan="2" style="text-align: center;">**Ours**</th>
+    <th colspan="2" style="text-align: center;">Ours</th>
   </tr>
   <tr>
     <td style="text-align: center;"><img src="assets/Real-world/gif_result/object4/04-ours.gif" alt="Image 4" width="99%"></td>
