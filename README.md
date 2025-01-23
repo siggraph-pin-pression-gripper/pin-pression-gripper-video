@@ -8,10 +8,10 @@ We carefully devise a reinforcement learning algorithm to handle the online gras
 
 
 ## Real-world demo
-We have developed a preliminary implementation of our pin-pression gripper.
+We have developed a real-world implementation of our pin-pression gripper with electrically controlled pins,.
 
 ![](assets/Real-world/sim2real.png)
-We fabricate a real pin-pression gripper (a) equipped with an in-hand RGB-D camera for capturing observations. The gripper approaches the target object from the top (b), forms a basic closure against the object with pin movements (c), and achieves the final grasp (d).
+We fabricate a real pin-pression gripper with electrically controlled pins(a), equipped with an in-hand RGB-D camera for capturing observations. The gripper approaches the target object from the top, forms a basic closure against the object with pin movements, and achieves the final grasp (b).
 
 ### Physical experiment video (Loading the GIF here may take a few minutes and thanks for your patience)
 | <img src="assets/Real-world/gif_result/object1/01-ours.gif" alt="Image 1.1">| <img src="assets/Real-world/gif_result/object1/01-passive.gif" alt="Image 1.2">|
@@ -28,10 +28,14 @@ We fabricate a real pin-pression gripper (a) equipped with an in-hand RGB-D came
 The corresponding MP4 format demos have also been uploaded in the path: 'assets/Real-world/mp4_result'.
 
 #### Hardware configuration
-We utilize pneumatic cylinders as the actuators of our pin-pression gripper. Each cylinder is controlled via solenoid valves and relays, allowing for precise extension and retraction. To explore the minimum number of pin actuators in practice, the physical gripper is designed with a 3x3 resolution, weighing 2.3kg. Both gripper size and pin sizes align with the simulated gripper. Our gripper is mounted on a FANUC Robot for vertical movement.  
+We utilize  electrica actuators as pins of our pin-pression gripper. Each pin is connected to a separate relay for independent control, allowing for precise extension and retraction. The physical gripper is designed with a 4x4 resolution, weighing 2.3kg. Both gripper size and pin sizes align with the simulated gripper. Our gripper is mounted on a FANUC Robot for vertical movement.  
 
 #### Observation signal and control policy
-To enable real-world deployment, we distill the control policy learned in the simulator into a student policy that only receives RGB-D images, the extension values of each pin actuator, and the position of the gripper as observation signals. These signals are embedded and concatenated as the state feature and then fed to the student policy for grasping actions. In our real-world experiments, we confirmed that our gripper can achieve satisfactory grasping of multiple objects, such as Stanford Bunny, even only with a 3×3 pin resolution.
+to
+adapt our dynamic grasping policy trained in simulation can be effectively
+transferred to the real world, we have used a two-stage teacher-student training
+paradigm [
+To enable real-world deployment, we use a two-stage teacher-student training paradigm. We distill the control policy learned in the simulator into a student policy that only receives RGB-D images and the extension values of each pin actuator as observation signals. These signals are embedded and concatenated as the state feature and then fed to the student policy for grasping actions. In our real-world experiments, we confirmed that our gripper can achieve satisfactory grasping of multiple objects.
 
 ## Data preparation
 We collect several challenging objects to further demonstrate the necessity of our on-line grasping approach. 
