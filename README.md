@@ -14,12 +14,12 @@ We have developed a real-world implementation of our pin-pression gripper with e
 We fabricate a real pin-pression gripper with electrically controlled pins(a), equipped with an in-hand RGB-D camera for capturing observations. The gripper approaches the target object from the top, forms a basic closure against the object with pin movements, and achieves the final grasp (b).
 
 ### Physical experiment video (Loading the GIF here may take a few minutes and thanks for your patience)
-| <img src="assets/Real-world/gif_result/object1/01-ours.gif" alt="Image 1.1">| <img src="assets/Real-world/gif_result/object1/01-passive.gif" alt="Image 1.2">|
-|:--:|:--:| 
+| **Ours** |**Passive grasping** |
+|--|--| 
+| <img src="assets/Real-world/gif_result/object1/01-ours.gif" alt="Image 1.1">| <img src="assets/Real-world/gif_result/object1/01-passive.gif" alt="Image 1.2">| 
 | <img src="assets/Real-world/gif_result/object2/02-ours.gif" alt="Image 2.1">| <img src="assets/Real-world/gif_result/object2/02-passive.gif" alt="Image 2.2">|
 | <img src="assets/Real-world/gif_result/object3/03-ours.gif" alt="Image 3.1">| <img src="assets/Real-world/gif_result/object3/03-passive.gif" alt="Image 3.2">|
-| *Ours* |*Passive grasping* |
-
+|**Ours**|
 | <img src="assets/Real-world/gif_result/object4/04-ours.gif" alt="Image 4" width="49.5%"> <img src="assets/Real-world/gif_result/object5/05-ours.gif" alt="Image 5" width="49.5%">|
 |:--:|
 |*Ours*|
@@ -28,13 +28,9 @@ We fabricate a real pin-pression gripper with electrically controlled pins(a), e
 The corresponding MP4 format demos have also been uploaded in the path: 'assets/Real-world/mp4_result'.
 
 #### Hardware configuration
-We utilize  electrica actuators as pins of our pin-pression gripper. Each pin is connected to a separate relay for independent control, allowing for precise extension and retraction. The physical gripper is designed with a 4x4 resolution, weighing 2.3kg. Both gripper size and pin sizes align with the simulated gripper. Our gripper is mounted on a FANUC Robot for vertical movement.  
+We utilize  electrical actuators as pins of our pin-pression gripper. Each pin is connected to a separate relay for independent control, allowing for precise extension and retraction. The physical gripper is designed with a 4x4 resolution, weighing 2.3kg. Both gripper size and pin sizes align with the simulated gripper. Our gripper is mounted on a FANUC Robot for vertical movement.  
 
 #### Observation signal and control policy
-to
-adapt our dynamic grasping policy trained in simulation can be effectively
-transferred to the real world, we have used a two-stage teacher-student training
-paradigm [
 To enable real-world deployment, we use a two-stage teacher-student training paradigm. We distill the control policy learned in the simulator into a student policy that only receives RGB-D images and the extension values of each pin actuator as observation signals. These signals are embedded and concatenated as the state feature and then fed to the student policy for grasping actions. In our real-world experiments, we confirmed that our gripper can achieve satisfactory grasping of multiple objects.
 
 ## Data preparation
