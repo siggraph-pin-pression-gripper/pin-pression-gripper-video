@@ -52,6 +52,12 @@ To enable real-world deployment, we use a two-stage teacher-student training par
 We collect several challenging objects to further demonstrate the necessity of our on-line grasping approach. 
 The challenge datasets: Chal-H dataset with 50 flat shapes and Chal-T dataset consisting of 58 objects with inclined surfaces or tetrahedron-like shapes. You can download the prepared dataset from [here](https://drive.google.com/drive/folders/1nx7LngqmtAvSGkX44yYfAoMbGQITP_i1?usp=drive_link).
 
+## 📄 Supplementary Material
+
+For more experimental details and additional results, please refer to the supplementary material:
+
+👉 [Download Supplementary Material (PDF)](./assets/supplementary/supp.pdf)
+
 ## Animation result 
 Using our pin-pression gripper, we found that passive grasping method which heuristically extends all pins struggles, particularly with objects with inclined surfaces. It is necessary to adopt reinforcement learning (RL) policies for the pin-pression gripper to enable adaptive in-hand object adjustments, thereby achieving better force closure and efficient grasping. 
 #### RL policy vs. Passive grasping (Loading the GIF may take a while and thanks for your patience)
