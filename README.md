@@ -50,9 +50,9 @@ To enable real-world deployment, we use a two-stage teacher-student training par
 
 ## Data preparation
 We collect several challenging objects to further demonstrate the necessity of our on-line grasping approach. 
-The challenge datasets: Chal-H dataset with 50 flat shapes and Chal-T dataset consisting of 58 objects with inclined surfaces or tetrahedron-like shapes. You can download the prepared dataset from [here](https://drive.google.com/drive/folders/1nx7LngqmtAvSGkX44yYfAoMbGQITP_i1?usp=drive_link).
+The challenge datasets: Chal-H dataset with 50 flat shapes and Chal-T dataset consisting of 58 objects with inclined surfaces or tetrahedron-like shapes. You can download the prepared dataset from [here](https://drive.google.com/drive/folders/1nx7LngqmtAvSGkX44yYfAoMbGQITP_i1?usp=drive_link). The training and testing data used in our experiments can be found [here](https://drive.google.com/drive/folders/1gUtK2BN2nmtp3zWg8up30pIlELLl_lgJ?usp=drive_link).
 
-## 📄 Supplementary Material
+## Supplementary Material
 
 For more experimental details and additional results, please refer to the supplementary material:
 
